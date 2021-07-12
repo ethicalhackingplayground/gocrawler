@@ -1,4 +1,4 @@
-module github.com/ethicalhackingplayground/gocrawler
+module github.com/ethicalhackingplayground/gocrawler/gocrawl
 
 go 1.16
 
