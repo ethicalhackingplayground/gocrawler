@@ -24,7 +24,7 @@
 ### Usage
 
 ```sh
-gocrawler -h
+./gocrawl -h
 ```
 
 This will display help for the tool. Here are all the switches it supports.
@@ -33,7 +33,7 @@ This will display help for the tool. Here are all the switches it supports.
 <summary> 👉 gocrawler help menu 👈</summary>
 
 ```
-Usage of ./crawler:
+Usage of ./gocrawl:
   -d int
         the crawl depth (default 5)
   -t int
@@ -47,19 +47,19 @@ Usage of ./crawler:
 Crawling a single domain
 
 ```sh
-▶ echo "https://paypal.com" | crawler
+▶ echo "https://paypal.com" | ./gocrawl
 ```
 
 Crawling a resolved subdomain list
 
 ```sh
-▶ cat alive | crawler
+▶ cat alive | ./gocrawl
 ```
 
 Crawling a resolved subdomain list and scanning for XSS
 
 ```sh
-▶ cat alive | crawler | erebus -t erebus-templates/xss-reflected.yaml 
+▶ cat alive | ./gocrawl | erebus -t erebus-templates/xss-reflected.yaml 
 ```
 
 ### License
